@@ -18,6 +18,7 @@ switch ($aksi) {
                     <th>Nama Prodi</th>
                     <th>Jenjang Studi</th>
                     <th>Keterangan</th>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos tempore animi maxime alias minima eaque impedit inventore consectetur, soluta, molestiae, possimus ipsam mollitia corrupti veniam beatae minus non fugiat excepturi modi cumque. Consectetur ullam eveniet ipsum magnam voluptas libero earum aperiam nobis doloremque labore facere aliquam praesentium ea nihil ratione, ex cupiditate, deserunt autem reprehenderit quam nam tenetur dignissimos? Voluptatibus, distinctio atque. Suscipit quas doloribus quaerat fuga iste est officia officiis ut voluptatibus aliquid voluptate perspiciatis iure, dicta id, nemo fugit saepe eos mollitia impedit facilis quod repellendus a! Vitae, earum ipsum atque in qui at magnam aut eaque! Quia.</p>
                     </tr>
                     </thead>
 
