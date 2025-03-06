@@ -20,11 +20,11 @@ switch ($aksi) {
 
 
         <div class="container">
-        <div class="py-2">
-        <a href="index.php?p=matkul&aksi=input" class="btn btn-success">Input Data Baru</a>
-        </div> 
-        <table id="example" class="table table-bordered border border-black">
-                    <thead>
+            <div class="py-2">
+                <a href="index.php?p=matkul&aksi=input" class="btn btn-success">Input Data Baru</a>
+            </div>
+            <table id="example" class="table table-bordered border border-black">
+                <thead>
                     <tr>
                         <th>No</th>
                         <th>Kode Matkul</th>
@@ -34,7 +34,7 @@ switch ($aksi) {
                         <th>Semester</th>
                         <th>Aksi</th>
                     </tr>
-                    </thead>
+                </thead>
                 <tbody>
                     <?php
                     $result = mysqli_query($db, "SELECT * FROM matkul 
@@ -76,14 +76,14 @@ switch ($aksi) {
 
         <body>
             <div class="container">
-    
+
                 <div class="row">
                     <div class="col-8">
                         <form action="proses_matkul.php?proses=insert" method="post">
                             <div class="row mb-3">
                                 <label class="col-sm-3 col-form-label">Kode Matkul</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="kode_mk"required>
+                                    <input type="text" class="form-control" name="kode_mk" required>
                                 </div>
                             </div>
 
@@ -93,11 +93,11 @@ switch ($aksi) {
                                     <input type="text" class="form-control" name="nama_mk" required>
                                 </div>
                             </div>
-                                                    
+
                             <div class="row mb-3">
                                 <label class="col-sm-3 col-form-label">SKS</label>
                                 <div class="col-sm-8">
-                                    <input type="number" class="form-control" name="sks"required>
+                                    <input type="number" class="form-control" name="sks" required>
                                 </div>
                             </div>
 
@@ -117,13 +117,13 @@ switch ($aksi) {
                                 </div>
                             </div>
 
-                            <di class="row mb-3">
+                            <div class="row mb-3">
                                 <label class="col-sm-3 col-form-label">Semester</label>
                                 <div class="col-sm-8">
-                                    <input type="number" class="form-control" name="semester"required>
+                                    <input type="number" class="form-control" name="semester" required>
                                 </div>
-                                    </di>
-                            
+                            </div>
+
                             <div class="row mb-3">
                                 <label class="col-sm-3 col-form-label"></label>
                                 <div class="col-sm-8">
@@ -132,6 +132,7 @@ switch ($aksi) {
                                     <a href="?p=matkul" class="btn btn-success">Lihat Mata Kuliah</a>
                                 </div>
                             </div>
+
                         </form>
                     </div>
                 </div>
@@ -164,23 +165,24 @@ switch ($aksi) {
             $nama_mk = $_POST['nama_mk'];
             $sks = $_POST['sks'];
             $prodi_id = $_POST['prodi'];
-            $semester = $_POST['semester'];    
+            $semester = $_POST['semester'];
         }
         ?>
+
         <body>
-          
-        <div class="container">
+
+            <div class="container">
                 <form action="proses_matkul.php?proses=update" method="post">
                     <input type="hidden" name="kode_mk" value="<?= $data['kode_mk'] ?>">
-                     
-                    
+
+
 
                     <!-- Nama -->
                     <div class="mb-3">
                         <label for="" class="form-label">Nama Matkul</label>
                         <input type="text" name="nama_mk" class="form-control" value="<?= $data['nama_mk'] ?>" required>
                     </div>
-                    
+
                     <!-- SKS -->
                     <div class="mb-3">
                         <label class="form-label">SKS</label>
